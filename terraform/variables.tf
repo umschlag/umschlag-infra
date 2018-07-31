@@ -95,11 +95,12 @@ variable "maintainer_repos" {
 }
 
 variable "ssh_keys" {
-  type = "map"
+  type = "list"
 
-  default = {
-    "tboerger@loki" = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCc1nE4kCs9WXEEbotF+0Rivnr/9I0fc56QLZTqIr4Rsl3iZcvVDgYJmh6rPcl9xKBptNo/jK1EJF/bm2APf6wIU5Q7tNjeIw5IMJnBRBfPdQujXumb1LZMGnQvPT/gHdpVZvPkYlKkBocOJGPG99GZL0FlXXpc4eDYrgCMfCzRFG1SbQWcUdipbJJgELmbiOy7c5eHtb9i51x7g99pC91WnpInuN4pa0AFHwDQpBhS8RSLFEAfWNNs4T3SiYiUUq0lIHBoIoTM8fTTzhshXAlGWuwsZ9c9luEAw+n4QL8oD9a2ycWTJ3JCRK3CC/+J2MqCROSL4zpVA7+PFrloScMV"
-  }
+  default = [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCc1nE4kCs9WXEEbotF+0Rivnr/9I0fc56QLZTqIr4Rsl3iZcvVDgYJmh6rPcl9xKBptNo/jK1EJF/bm2APf6wIU5Q7tNjeIw5IMJnBRBfPdQujXumb1LZMGnQvPT/gHdpVZvPkYlKkBocOJGPG99GZL0FlXXpc4eDYrgCMfCzRFG1SbQWcUdipbJJgELmbiOy7c5eHtb9i51x7g99pC91WnpInuN4pa0AFHwDQpBhS8RSLFEAfWNNs4T3SiYiUUq0lIHBoIoTM8fTTzhshXAlGWuwsZ9c9luEAw+n4QL8oD9a2ycWTJ3JCRK3CC/+J2MqCROSL4zpVA7+PFrloScMV tboerger@loki",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDOgWMNdvTyZNOOaglWDbcIGKH/l6W7DAWfiR6y+AvDx8bhGGfH2ESUZ1UusOmZXLnIrwfPCVqbV87QYXOwlaApjVUfcRIepUY37kQbFc26Fwm02+7nwWuOJI4anHjedTKPiGjzfAY01jQ81euR3fm6/cSe3jnU3SagFV/7iGDQhXpDccZ24GgYD5hfS9y4XW2T5dIf8vswRVN576RU8DwKGKz/jSL34wsdleePdgUKCHuP3t3MQBpckocru8iA8S5zT0O/u6ZUvA3cEtXaCSi/bLVs5TG1qvKZC7FLp7SzwjTLYtJessVF/1xNrhZjk5dC65v2YfOPKm1gF9cZfGmR drone",
+  ]
 }
 
 variable "ssh_port" {
@@ -132,10 +133,19 @@ variable "server_backup" {
   default = "02-06"
 }
 
-variable "server_names" {
-  type = "map"
+variable "server_keys" {
+  type = "list"
 
-  default = {
-    "0" = "eitri"
-  }
+  default = [
+    "drone",
+    "tboerger@loki",
+  ]
+}
+
+variable "server_names" {
+  type = "list"
+
+  default = [
+    "eitri",
+  ]
 }
