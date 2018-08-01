@@ -14,7 +14,7 @@ drone_admins:
   - umschlagz
   - tboerger
 drone_whitelist:
-  - umschlag
+  - umschlag/*
 drone_escalate:
   - plugins/docker
   - docker
