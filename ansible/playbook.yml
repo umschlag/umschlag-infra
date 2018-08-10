@@ -16,6 +16,8 @@
 
 - hosts: eitri
   roles:
+    - dockerhub-exporter
+    - github-exporter
     - minio
     - downloads
     - mariadb
