@@ -1,4 +1,5 @@
 traefik_domain: umschlag.tech
 traefik_email: hostmaster@umschlag.tech
+
 traefik_users:
   - umschlag:$apr1$ChGgcrew$669VOlhVjH5A7nwPpKW2Y/

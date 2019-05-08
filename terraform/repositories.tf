@@ -8,6 +8,7 @@ resource "github_repository" "homebrew-umschlag" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["homebrew", "formula"]
 }
 
 resource "github_repository" "umschlag-android" {
@@ -20,6 +21,7 @@ resource "github_repository" "umschlag-android" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["android", "client"]
 }
 
 resource "github_repository" "umschlag-api" {
@@ -32,6 +34,7 @@ resource "github_repository" "umschlag-api" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["api", "server", "golang"]
 }
 
 resource "github_repository" "umschlag-cli" {
@@ -44,6 +47,7 @@ resource "github_repository" "umschlag-cli" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["cli", "golang", "client"]
 }
 
 resource "github_repository" "umschlag-desktop" {
@@ -56,6 +60,7 @@ resource "github_repository" "umschlag-desktop" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["desktop", "client"]
 }
 
 resource "github_repository" "umschlag-docs" {
@@ -68,6 +73,7 @@ resource "github_repository" "umschlag-docs" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["documentation", "docs", "hugo"]
 }
 
 resource "github_repository" "umschlag-go" {
@@ -80,6 +86,7 @@ resource "github_repository" "umschlag-go" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["sdk", "golang", "go", "openapi", "swagger"]
 }
 
 resource "github_repository" "umschlag-infra" {
@@ -92,6 +99,7 @@ resource "github_repository" "umschlag-infra" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["infrastructure", "ansible", "terraform", "provsioning"]
 }
 
 resource "github_repository" "umschlag-ios" {
@@ -104,6 +112,7 @@ resource "github_repository" "umschlag-ios" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["ios", "apple", "client"]
 }
 
 resource "github_repository" "umschlag-js" {
@@ -116,6 +125,7 @@ resource "github_repository" "umschlag-js" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["sdk", "javascript", "js", "openapi", "swagger"]
 }
 
 resource "github_repository" "umschlag-php" {
@@ -128,6 +138,7 @@ resource "github_repository" "umschlag-php" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["sdk", "php", "openapi", "swagger"]
 }
 
 resource "github_repository" "umschlag-python" {
@@ -140,6 +151,7 @@ resource "github_repository" "umschlag-python" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["sdk", "python", "openapi", "swagger"]
 }
 
 resource "github_repository" "umschlag-ruby" {
@@ -152,6 +164,7 @@ resource "github_repository" "umschlag-ruby" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["sdk", "ruby", "openapi", "swagger"]
 }
 
 resource "github_repository" "umschlag-scripts" {
@@ -164,6 +177,7 @@ resource "github_repository" "umschlag-scripts" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["script", "bash", "provision"]
 }
 
 resource "github_repository" "umschlag-ui" {
@@ -176,4 +190,5 @@ resource "github_repository" "umschlag-ui" {
   allow_squash_merge = true
   allow_rebase_merge = true
   has_downloads      = false
+  topics = ["ui", "nodejs"]
 }
