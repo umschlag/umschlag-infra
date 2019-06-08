@@ -1,7 +1,6 @@
 # Umschlag: Infra
 
-[![Build Status](http://cloud.drone.io/api/badges/umschlag/umschlag-infra/status.svg)](http://cloud.drone.io/umschlag/umschlag-infra)
-[![Stories in Ready](https://badge.waffle.io/umschlag/umschlag-api.svg?label=ready&title=Ready)](http://waffle.io/umschlag/umschlag-api)
+[![Build Status](https://cloud.drone.io/api/badges/umschlag/umschlag-infra/status.svg)](https://cloud.drone.io/umschlag/umschlag-infra)
 [![Join the Matrix chat at https://matrix.to/#/#umschlag:matrix.org](https://img.shields.io/badge/matrix-%23umschlag%3Amatrix.org-7bc9a4.svg)](https://matrix.to/#/#umschlag:matrix.org)
 
 **This project is under heavy development, it's not in a working state yet!**
